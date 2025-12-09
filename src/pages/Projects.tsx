@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Box, ExternalLink } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Box, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
 import ProjectDialog, { type ProjectData } from '../components/ProjectDialog';
 
@@ -140,6 +140,15 @@ const Projects: React.FC = () => {
             >
                 <ArrowLeft className="w-5 h-5" />
                 <span>Back to Skills</span>
+            </Link>
+
+            <Link
+                to="/contact"
+                className="mt-4 flex items-center gap-2 text-slate-500 dark:text-slate-500 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors"
+                style={{ marginTop: '1rem' }}
+            >
+                <span>Get in Touch</span>
+                <ArrowRight className="w-5 h-5" />
             </Link>
 
             {/* Project Details Dialog */}

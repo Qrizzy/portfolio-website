@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Linkedin, Github, ArrowLeft } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Github, ArrowLeft } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -98,12 +98,7 @@ const ProfileSidebar: React.FC = () => {
                     </div>
                     <span>Shah Alam, Selangor</span>
                 </div>
-                <div className="flex items-center gap-3 text-slate-500 dark:text-slate-400 text-sm">
-                    <div className="p-2 bg-slate-100 dark:bg-slate-800 rounded-lg">
-                        <Phone className="w-4 h-4 text-cyan-400" />
-                    </div>
-                    <span>+60 17-357 8464</span>
-                </div>
+
                 <div className="flex items-center gap-3 text-slate-500 dark:text-slate-400 text-sm">
                     <div className="p-2 bg-slate-100 dark:bg-slate-800 rounded-lg">
                         <Mail className="w-4 h-4 text-cyan-400" />

@@ -6,6 +6,7 @@ import ProfileLayout from './components/ProfileLayout';
 import About from './pages/About';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 const App: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const App: React.FC = () => {
           </Route>
 
           <Route path="projects" element={<Projects />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
     </BrowserRouter>

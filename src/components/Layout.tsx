@@ -9,7 +9,7 @@ const Layout: React.FC = () => {
     const prevPathRef = React.useRef(location.pathname);
     const directionRef = React.useRef(1);
 
-    const routes = ['/', '/profile/about', '/profile/skills', '/projects'];
+    const routes = ['/', '/profile/about', '/profile/skills', '/projects', '/contact'];
 
     const currentPathIndex = routes.indexOf(location.pathname);
     const prevPathIndex = routes.indexOf(prevPathRef.current);
