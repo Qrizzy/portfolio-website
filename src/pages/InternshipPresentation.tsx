@@ -94,11 +94,28 @@ const InternshipPresentation: React.FC = () => {
             id: 2,
             content: (
                 <div className="flex flex-col items-center justify-center h-full text-center max-w-6xl mx-auto">
-                    <img
-                        src="https://teklinx.my/wp-content/uploads/2022/09/cropped-Teklinx-Logo.png"
-                        alt="Teklinx Logo"
-                        className="h-20 mb-8 object-contain"
-                    />
+                    <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 mb-10 bg-gray-200 dark:bg-gray-500 p-6 rounded-2xl backdrop-blur-sm shadow-inner">
+                        {/* Parent Company */}
+                        <img
+                            src="https://malayantechlabs.com/wp-content/uploads/2025/12/logo_mtl_christmas-220x69.png"
+                            alt="Malayan Tech Labs"
+                            className="h-12 md:h-16 object-contain"
+                        />
+                        <div className="w-px h-12 bg-slate-300 dark:bg-slate-600 hidden md:block" />
+                        {/* Subsidiaries */}
+                        <div className="flex items-center gap-8">
+                            <img
+                                src="https://teklinx.my/wp-content/uploads/2022/09/cropped-Teklinx-Logo.png"
+                                alt="Teklinx"
+                                className="h-10 md:h-14 object-contain"
+                            />
+                            <img
+                                src="https://www.hwuion.my/wp-content/uploads/2025/12/logo_hwuion_christmas3-85x92.png"
+                                alt="Hwuion"
+                                className="h-10 md:h-14 object-contain"
+                            />
+                        </div>
+                    </div>
                     <h2 className="text-3xl md:text-5xl font-bold mb-10 text-slate-900 dark:text-white">Company Background</h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full text-left">
@@ -106,7 +123,7 @@ const InternshipPresentation: React.FC = () => {
                         <div className="bg-white/50 dark:bg-slate-900/50 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-lg space-y-4">
                             <h3 className="text-2xl font-bold text-cyan-600 dark:text-cyan-400 mb-2">Who They Are</h3>
                             <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-lg">
-                                Teklinx (M) Sdn Bhd is a top tech company in Malaysia that helps businesses grow using digital tools. They create custom IT solutions for all kinds of companies, from small startups to big corporations.
+                                Teklinx (M) Sdn Bhd and its parent company, <b>Malayan Tech Labs</b>, are based in <span className="text-slate-800 dark:text-slate-200 font-semibold">Subang Jaya</span>. The group also owns <b>Hwuion</b>, which is located in <span className="text-slate-800 dark:text-slate-200 font-semibold">Skudai, Johor</span>. Together, they work as a team to help businesses grow using modern digital tools.
                             </p>
                             <div className="pt-4">
                                 <h4 className="font-bold text-slate-800 dark:text-slate-200 mb-2">Main Goals</h4>
